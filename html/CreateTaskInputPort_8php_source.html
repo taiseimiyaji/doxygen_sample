@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>My Project: src/Task/Command/CreateTask/CreateTaskInputPort.php ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="namespaces.html"><span>名前空間</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_1d61e4174a0c598b483a579aab70fdbe.html">Task</a></li><li class="navelem"><a class="el" href="dir_7911a5b5c8e66ca8c0b00e42d2f0cea3.html">Command</a></li><li class="navelem"><a class="el" href="dir_9beb72bdab44776017744c18bc21ee16.html">CreateTask</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CreateTaskInputPort.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="CreateTaskInputPort_8php.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;declare(strict_types=1);</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceTodo_1_1Task_1_1Command_1_1CreateTask.html">Todo\Task\Command\CreateTask</a>;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;use <a class="code" href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskId.html">Todo\Task\ValueObject\TaskId</a>;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;use <a class="code" href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskCost.html">Todo\Task\ValueObject\TaskCost</a>;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;use <a class="code" href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskName.html">Todo\Task\ValueObject\TaskName</a>;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;use <a class="code" href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskLabel.html">Todo\Task\ValueObject\TaskLabel</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;use <a class="code" href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskTodos.html">Todo\Task\ValueObject\TaskTodos</a>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;use <a class="code" href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskDetail.html">Todo\Task\ValueObject\TaskDetail</a>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;use <a class="code" href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskDeadline.html">Todo\Task\ValueObject\TaskDeadline</a>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html">   14</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html">CreateTaskCardInputPort</a></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#abeaff45521a1188caa321cac41d1bb9f">id</a>(): <a class="code" href="classTodo_1_1Task_1_1ValueObject_1_1TaskId.html">TaskId</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#af00306a7107d0af78005c4f13f1413f5">name</a>(): <a class="code" href="classTodo_1_1Task_1_1ValueObject_1_1TaskName.html">TaskName</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#aeed159efe9f72a13a5a0d20c77c7ef1a">detail</a>(): <a class="code" href="classTodo_1_1Task_1_1ValueObject_1_1TaskDetail.html">TaskDetail</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#a957ed5bfb38b220f127ca6fa3693b6be">deadline</a>(): <a class="code" href="classTodo_1_1Task_1_1ValueObject_1_1TaskDeadline.html">TaskDeadline</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#a271806c9059b6e019610de6a31bb69fe">lavel</a>(): <a class="code" href="classTodo_1_1Task_1_1ValueObject_1_1TaskLabel.html">TaskLabel</a>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#a4a61de03c63a203e401ed10e18cb16c3">costs</a>(): <a class="code" href="classTodo_1_1Task_1_1ValueObject_1_1TaskCost.html">TaskCost</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#a80279afd6259c7d8d0474b3559c503ff">todos</a>(): <a class="code" href="classTodo_1_1Task_1_1ValueObject_1_1TaskTodos.html">TaskTodos</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="ttc" id="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskDetail_html"><div class="ttname"><a href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskDetail.html">TaskDetail</a></div></div>
+<div class="ttc" id="namespaceTodo_1_1Task_1_1Command_1_1CreateTask_html"><div class="ttname"><a href="namespaceTodo_1_1Task_1_1Command_1_1CreateTask.html">Todo\Task\Command\CreateTask</a></div><div class="ttdef"><b>Definition:</b> <a href="CreateTask_8php_source.html#l00004">CreateTask.php:4</a></div></div>
+<div class="ttc" id="classTodo_1_1Task_1_1ValueObject_1_1TaskDeadline_html"><div class="ttname"><a href="classTodo_1_1Task_1_1ValueObject_1_1TaskDeadline.html">Todo\Task\ValueObject\TaskDeadline</a></div><div class="ttdef"><b>Definition:</b> <a href="TaskDeadline_8php_source.html#l00006">TaskDeadline.php:6</a></div></div>
+<div class="ttc" id="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort_html_a4a61de03c63a203e401ed10e18cb16c3"><div class="ttname"><a href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#a4a61de03c63a203e401ed10e18cb16c3">Todo\Task\Command\CreateTask\CreateTaskCardInputPort\costs</a></div><div class="ttdeci">costs()</div></div>
+<div class="ttc" id="classTodo_1_1Task_1_1ValueObject_1_1TaskCost_html"><div class="ttname"><a href="classTodo_1_1Task_1_1ValueObject_1_1TaskCost.html">Todo\Task\ValueObject\TaskCost</a></div><div class="ttdef"><b>Definition:</b> <a href="TaskCost_8php_source.html#l00007">TaskCost.php:7</a></div></div>
+<div class="ttc" id="classTodo_1_1Task_1_1ValueObject_1_1TaskLabel_html"><div class="ttname"><a href="classTodo_1_1Task_1_1ValueObject_1_1TaskLabel.html">Todo\Task\ValueObject\TaskLabel</a></div><div class="ttdef"><b>Definition:</b> <a href="TaskLabel_8php_source.html#l00006">TaskLabel.php:6</a></div></div>
+<div class="ttc" id="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort_html_af00306a7107d0af78005c4f13f1413f5"><div class="ttname"><a href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#af00306a7107d0af78005c4f13f1413f5">Todo\Task\Command\CreateTask\CreateTaskCardInputPort\name</a></div><div class="ttdeci">name()</div></div>
+<div class="ttc" id="classTodo_1_1Task_1_1ValueObject_1_1TaskTodos_html"><div class="ttname"><a href="classTodo_1_1Task_1_1ValueObject_1_1TaskTodos.html">Todo\Task\ValueObject\TaskTodos</a></div><div class="ttdef"><b>Definition:</b> <a href="TaskTodos_8php_source.html#l00006">TaskTodos.php:6</a></div></div>
+<div class="ttc" id="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskCost_html"><div class="ttname"><a href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskCost.html">TaskCost</a></div></div>
+<div class="ttc" id="classTodo_1_1Task_1_1ValueObject_1_1TaskDetail_html"><div class="ttname"><a href="classTodo_1_1Task_1_1ValueObject_1_1TaskDetail.html">Todo\Task\ValueObject\TaskDetail</a></div><div class="ttdef"><b>Definition:</b> <a href="TaskDetail_8php_source.html#l00009">TaskDetail.php:9</a></div></div>
+<div class="ttc" id="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort_html_aeed159efe9f72a13a5a0d20c77c7ef1a"><div class="ttname"><a href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#aeed159efe9f72a13a5a0d20c77c7ef1a">Todo\Task\Command\CreateTask\CreateTaskCardInputPort\detail</a></div><div class="ttdeci">detail()</div></div>
+<div class="ttc" id="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort_html_a271806c9059b6e019610de6a31bb69fe"><div class="ttname"><a href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#a271806c9059b6e019610de6a31bb69fe">Todo\Task\Command\CreateTask\CreateTaskCardInputPort\lavel</a></div><div class="ttdeci">lavel()</div></div>
+<div class="ttc" id="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort_html_abeaff45521a1188caa321cac41d1bb9f"><div class="ttname"><a href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#abeaff45521a1188caa321cac41d1bb9f">Todo\Task\Command\CreateTask\CreateTaskCardInputPort\id</a></div><div class="ttdeci">id()</div></div>
+<div class="ttc" id="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort_html_a80279afd6259c7d8d0474b3559c503ff"><div class="ttname"><a href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#a80279afd6259c7d8d0474b3559c503ff">Todo\Task\Command\CreateTask\CreateTaskCardInputPort\todos</a></div><div class="ttdeci">todos()</div></div>
+<div class="ttc" id="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskTodos_html"><div class="ttname"><a href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskTodos.html">TaskTodos</a></div></div>
+<div class="ttc" id="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskName_html"><div class="ttname"><a href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskName.html">TaskName</a></div></div>
+<div class="ttc" id="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort_html_a957ed5bfb38b220f127ca6fa3693b6be"><div class="ttname"><a href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html#a957ed5bfb38b220f127ca6fa3693b6be">Todo\Task\Command\CreateTask\CreateTaskCardInputPort\deadline</a></div><div class="ttdeci">deadline()</div></div>
+<div class="ttc" id="classTodo_1_1Task_1_1ValueObject_1_1TaskName_html"><div class="ttname"><a href="classTodo_1_1Task_1_1ValueObject_1_1TaskName.html">Todo\Task\ValueObject\TaskName</a></div><div class="ttdef"><b>Definition:</b> <a href="TaskName_8php_source.html#l00009">TaskName.php:9</a></div></div>
+<div class="ttc" id="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskLabel_html"><div class="ttname"><a href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskLabel.html">TaskLabel</a></div></div>
+<div class="ttc" id="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort_html"><div class="ttname"><a href="interfaceTodo_1_1Task_1_1Command_1_1CreateTask_1_1CreateTaskCardInputPort.html">Todo\Task\Command\CreateTask\CreateTaskCardInputPort</a></div><div class="ttdef"><b>Definition:</b> <a href="CreateTaskInputPort_8php_source.html#l00014">CreateTaskInputPort.php:14</a></div></div>
+<div class="ttc" id="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskDeadline_html"><div class="ttname"><a href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskDeadline.html">TaskDeadline</a></div></div>
+<div class="ttc" id="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskId_html"><div class="ttname"><a href="namespaceTodo_1_1Task_1_1ValueObject_1_1TaskId.html">TaskId</a></div></div>
+<div class="ttc" id="classTodo_1_1Task_1_1ValueObject_1_1TaskId_html"><div class="ttname"><a href="classTodo_1_1Task_1_1ValueObject_1_1TaskId.html">Todo\Task\ValueObject\TaskId</a></div><div class="ttdef"><b>Definition:</b> <a href="TaskId_8php_source.html#l00008">TaskId.php:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

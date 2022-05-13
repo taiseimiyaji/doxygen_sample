@@ -1,0 +1,4 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="node1" href="$classTodo_1_1Shared_1_1Foundation_1_1ValueObject_1_1Identifier.html" title="Todo\\Shared\\Foundation\l\\ValueObject\\Identifier" alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$classTodo_1_1Task_1_1ValueObject_1_1TaskId.html" title="Todo\\Task\\ValueObject\l\\TaskId" alt="" coords="229,5,392,47"/>
+</map>
